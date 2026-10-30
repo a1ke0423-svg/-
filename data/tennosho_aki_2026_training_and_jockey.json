@@ -1,0 +1,24 @@
+{
+  "race": "天皇賞(秋) 2026",
+  "note": "騎手は netkeiba 出馬表より。調教評価は各サイトの値を併記し、最終値は利用者の判断。",
+  "horses": {
+    "1": {"name": "クロワデュノール", "jockey": "C.デムーロ",
+          "training": {"netkeiba_screen": "A（態勢万全）", "umasiru": "B", "final": "B+", "final_source": "利用者の判断（A と B の中間）"}},
+    "2": {"name": "エルトンバローズ", "jockey": "松若風馬", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "3": {"name": "レガレイラ", "jockey": "岩田望来", "training": {"umasiru": "S", "final": "S（参考値）"}},
+    "4": {"name": "レディネス", "jockey": "横山典弘", "training": {"umasiru": "A", "final": "A（参考値）"}},
+    "5": {"name": "シャンパンカラー", "jockey": "内田博幸", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "6": {"name": "セイウンハーデス", "jockey": "幸英明", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "7": {"name": "マスカレードボール", "jockey": "C.ルメール", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "8": {"name": "ジュンブロッサム", "jockey": "杉原誠人", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "9": {"name": "ホウオウビスケッツ", "jockey": "岩田康誠", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "10": {"name": "ネブラディスク", "jockey": "川田将雅", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "11": {"name": "シェイクユアハート", "jockey": "古川吉洋", "training": {"umasiru": "A", "final": "A（参考値）"}},
+    "12": {"name": "コスモキュランダ", "jockey": "丹内祐次", "training": {"umasiru": "A", "final": "A（参考値）"}},
+    "13": {"name": "リアライズシリウス", "jockey": "津村明秀", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "14": {"name": "タガノデュード", "jockey": "M.デムーロ", "training": {"umasiru": "C", "final": "C（参考値）"}},
+    "15": {"name": "サクラファレル", "jockey": "佐々木大輔", "training": {"umasiru": "A", "final": "A（参考値）"}},
+    "16": {"name": "ジョバンニ", "jockey": "松山弘平", "training": {"umasiru": "B", "final": "B（参考値）"}},
+    "17": {"name": "ダノンデサイル", "jockey": "戸崎圭太", "training": {"umasiru": "A", "final": "A（参考値）"}}
+  }
+}
