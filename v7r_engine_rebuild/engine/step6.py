@@ -2,6 +2,7 @@
 
 - 役割は監査。予測順位・能力・WPR・SVI・騎手評価は変更しない（読むだけ）。
 - STEP5 が未完了（incomplete・ルート欠落・条件空）なら blocked。後続へ進めない。
+- 危険度（redteam_severity）は 低 / 中 / 高 で表す。
 - 反証の種類: accepted（成立）/ not_triggered（検査したが成立せず）/ unknown（根拠不足）。
 - accepted は参照 STEP・項目・値・発生条件・影響対象・反証対象の主張を必ず持つ。
 """
@@ -126,7 +127,7 @@ def step6_redteam(card_pace, horses: Dict, step5: Dict, unknown_sources: Dict) -
         accepted_losses = {c["category"] for c in cps
                            if c["kind"] == "accepted" and c["category"] in LOSS_CATEGORIES}
         n = len(accepted_losses)
-        severity = "low" if n == 0 else ("medium" if n == 1 else "high")
+        severity = "低" if n == 0 else ("中" if n == 1 else "高")
         result[num] = {"counterpoints": cps, "unknown_risks": unknowns,
                        "redteam_severity": severity, "accepted_loss_categories": sorted(accepted_losses)}
 

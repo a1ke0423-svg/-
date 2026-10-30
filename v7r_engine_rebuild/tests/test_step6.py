@@ -43,13 +43,17 @@ class Step6(unittest.TestCase):
     def test_fit_failure_accepted(self):
         h = horse(fit=0.3)
         r = step6_redteam("ミドル", {1: h}, {1: route()}, {})
-        self.assertEqual(r["horses"][1]["redteam_severity"], "medium")
+        self.assertEqual(r["horses"][1]["redteam_severity"], "中")
 
     def test_severity_from_category_count(self):
         h = horse(pace_dmg=0.7, fit=0.3)
         r = step6_redteam("ミドル", {1: h}, {1: route()}, {})
-        self.assertIn(r["horses"][1]["redteam_severity"], ("medium", "high"))
+        self.assertIn(r["horses"][1]["redteam_severity"], ("中", "高"))
         self.assertGreaterEqual(len(r["horses"][1]["accepted_loss_categories"]), 2)
+
+    def test_severity_low_when_nothing_accepted(self):
+        r = step6_redteam("ミドル", {1: horse()}, {1: route()}, {})
+        self.assertEqual(r["horses"][1]["redteam_severity"], "低")
 
     def test_top_ability_downgrade_only_with_all_three_accepted(self):
         h = horse(ability=0.95, pace_dmg=0.7, style=0.1, wpr=0.3)
