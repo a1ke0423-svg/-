@@ -51,6 +51,8 @@ def step0_quality(card: RaceCard) -> List[str]:
                     w.append(f"矛盾: 馬{h.number} 過去走 {p.date} の着順 {p.finish} が頭数 {p.field_size} を超えている")
             if not p.corner_path:
                 w.append(f"馬{h.number}: 過去走 {p.date} の通過順位 不明")
+            if p.track_condition is None:
+                w.append(f"馬{h.number}: 過去走 {p.date} の馬場状態 不明")
     return w
 
 
@@ -131,6 +133,11 @@ def step3_svi(horse: Horse, card: RaceCard) -> Dict:
         vals = [v for v in vals if v is not None]
         return sum(vals) / len(vals) if vals else None
 
+    track_fit = None
+    if card.track_condition is not None:
+        track_fit = fit(lambda p: p.track_condition == card.track_condition)
+    else:
+        warnings.append("馬場適正: 当日の馬場が不明のため None")
     course_fit = fit(lambda p: p.venue == card.venue and p.surface == card.surface)
     surface_fit = fit(lambda p: p.surface == card.surface)
     distance_fit = fit(lambda p: abs(p.distance - card.distance) <= T.DISTANCE_WINDOW_M)
@@ -142,7 +149,8 @@ def step3_svi(horse: Horse, card: RaceCard) -> Dict:
     return {"style_index": None if style is None else round(style, 4),
             "pace_benefit": pace_benefit, "pace_damage": pace_damage,
             "course_fit": course_fit, "surface_fit": surface_fit,
-            "distance_fit": distance_fit, "overall_svi": overall, "warnings": warnings}
+            "distance_fit": distance_fit, "track_fit": track_fit,
+            "overall_svi": overall, "warnings": warnings}
 
 
 # ---------- STEP4 ----------

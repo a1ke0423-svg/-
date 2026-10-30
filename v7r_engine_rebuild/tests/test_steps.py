@@ -130,3 +130,23 @@ class FieldSizeCheck(unittest.TestCase):
         h = Horse(1, "架空", past=[past(3, [3], field=8)])
         w = step0_quality(card([h]))
         self.assertFalse(any(x.startswith("矛盾") for x in w))
+
+
+class TrackFit(unittest.TestCase):
+    def test_track_fit_uses_same_condition_runs(self):
+        from engine.models import PastResult
+        p1 = PastResult("2099-01-01", "SYNTH", "芝", 2000, 1, [1], 10, "重")
+        p2 = PastResult("2098-01-01", "SYNTH", "芝", 2000, 18, [1], 10, "良")
+        h = Horse(1, "架空", past=[p1, p2])
+        r = step3_svi(h, card([h]))  # 当日 良
+        self.assertAlmostEqual(r["track_fit"], 0.0)
+
+    def test_track_fit_none_when_condition_unknown_today(self):
+        h = Horse(1, "架空", past=[past(1, [1], field=10)])
+        c = card([h], condition=None)
+        self.assertIsNone(step3_svi(h, c)["track_fit"])
+
+    def test_missing_track_condition_is_warned(self):
+        h = Horse(1, "架空", past=[past(1, [1], field=10)])
+        w = step0_quality(card([h]))
+        self.assertTrue(any("馬場状態 不明" in x for x in w))

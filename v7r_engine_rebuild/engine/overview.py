@@ -2,7 +2,7 @@
 
 - 重みは全項目を同じ（1）とする。仮の値であり、競馬的な根拠はない。
 - 欠けている項目は除外し、何項目で計算したかを必ず併記する（補完しない）。
-- 馬場適正・気性は、今の入力に無いため常に「不明」。
+- 馬場適正は、過去走の馬場状態が入っている走だけで計算する。気性は入力が無いため「不明」。
 - 走り方の幅は WPR の一致率で代用する（仮定）。
 """
 from typing import Dict
@@ -23,7 +23,7 @@ def overview(step_results: Dict) -> Dict:
     comps = {
         "能力(スタミナ・スピード)": step_results["step1"]["ability_score"],
         "距離適性": step_results["step3"]["distance_fit"],
-        "馬場適正": None,   # 過去走の馬場状態が未入力
+        "馬場適正": step_results["step3"]["track_fit"],
         "コース適性": step_results["step3"]["course_fit"],
         "走り方の幅": step_results["step2"]["wpr_score"],  # 仮定: WPR で代用
         "気性": None,       # 入力なし

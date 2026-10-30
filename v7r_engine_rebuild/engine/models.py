@@ -15,6 +15,7 @@ class PastResult:
     finish: Optional[int]           # 着順（取消・除外は None）
     corner_path: List[int] = field(default_factory=list)  # 道中の通過順位列（判明分のみ）
     field_size: Optional[int] = None  # 頭数（無ければ None。H-4 の未解消項目）
+    track_condition: Optional[str] = None  # その走の馬場状態（良・稍重・重・不良。無ければ None）
 
 
 @dataclass(frozen=True)
