@@ -9,3 +9,4 @@ POOR_RANK = 8                       # 苦戦位置の算出に使う着順（8�
 WPR_TOLERANCE = 2                   # 許容位置 = 理想位置 ± 2
 DISTANCE_WINDOW_M = 200             # 距離適性の範囲（±200m）
 PACE_MIDDLE_VALUE = 0.5             # ミドルペースの恩恵・被害（ルール値）
+MAX_FIELD_SIZE = 18                # JRA の出走頭数の上限（実際に走った頭数。取消・除外は除く）

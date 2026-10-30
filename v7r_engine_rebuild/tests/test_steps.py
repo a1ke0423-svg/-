@@ -113,3 +113,20 @@ class Step0(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FieldSizeCheck(unittest.TestCase):
+    def test_finish_beyond_field_size_is_contradiction(self):
+        h = Horse(1, "架空", past=[past(12, [5], field=10)])
+        w = step0_quality(card([h]))
+        self.assertTrue(any(x.startswith("矛盾") and "着順 12 が頭数 10 を超えている" in x for x in w))
+
+    def test_field_size_over_max_is_contradiction(self):
+        h = Horse(1, "架空", past=[past(1, [1], field=19)])
+        w = step0_quality(card([h]))
+        self.assertTrue(any("範囲外" in x for x in w))
+
+    def test_valid_field_size_has_no_contradiction(self):
+        h = Horse(1, "架空", past=[past(3, [3], field=8)])
+        w = step0_quality(card([h]))
+        self.assertFalse(any(x.startswith("矛盾") for x in w))

@@ -44,6 +44,11 @@ def step0_quality(card: RaceCard) -> List[str]:
                 w.append(f"馬{h.number}: 過去走 {p.date} の着順 不明")
             if p.field_size is None:
                 w.append(f"馬{h.number}: 過去走 {p.date} の頭数 不明（H-4）")
+            else:
+                if not (1 <= p.field_size <= T.MAX_FIELD_SIZE):
+                    w.append(f"矛盾: 馬{h.number} 過去走 {p.date} の頭数 {p.field_size} は範囲外（1〜{T.MAX_FIELD_SIZE}）")
+                if p.finish is not None and p.finish > p.field_size:
+                    w.append(f"矛盾: 馬{h.number} 過去走 {p.date} の着順 {p.finish} が頭数 {p.field_size} を超えている")
             if not p.corner_path:
                 w.append(f"馬{h.number}: 過去走 {p.date} の通過順位 不明")
     return w
