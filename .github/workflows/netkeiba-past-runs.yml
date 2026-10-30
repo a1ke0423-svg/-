@@ -1,0 +1,60 @@
+name: netkeiba 過去走の取得（下書き）
+
+# スマホのGitHubアプリやブラウザから「Run workflow」で手動実行する。
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "馬ID（カンマ区切り）例: 2022105102,2020100680"
+        required: true
+        type: string
+      out:
+        description: "出力先 例: data/past_runs_draft.json"
+        required: true
+        default: "data/past_runs_draft.json"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 入力を確認する（数字とカンマ以外は拒否）
+        env:
+          IDS: ${{ inputs.ids }}
+          OUT: ${{ inputs.out }}
+        run: |
+          if ! [[ "$IDS" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
+            echo "ids は数字とカンマだけで入力してください"; exit 1
+          fi
+          if ! [[ "$OUT" =~ ^data/[A-Za-z0-9_./-]+\.json$ ]]; then
+            echo "out は data/ 以下の .json にしてください"; exit 1
+          fi
+
+      - name: 成績を取得して下書きを作る
+        env:
+          IDS: ${{ inputs.ids }}
+          OUT: ${{ inputs.out }}
+        run: python3 tools/netkeiba_past_runs.py --ids "$IDS" --out "$OUT" --raw-dir data/raw
+
+      - name: 下書きをリポジトリに保存する（確定はしない）
+        env:
+          OUT: ${{ inputs.out }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "netkeiba 過去走の下書きを追加（AI下書き・未確認）: $OUT"
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+          fi
