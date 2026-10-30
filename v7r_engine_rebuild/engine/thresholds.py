@@ -10,3 +10,17 @@ WPR_TOLERANCE = 2                   # 許容位置 = 理想位置 ± 2
 DISTANCE_WINDOW_M = 200             # 距離適性の範囲（±200m）
 PACE_MIDDLE_VALUE = 0.5             # ミドルペースの恩恵・被害（ルール値）
 MAX_FIELD_SIZE = 18                # JRA の出走頭数の上限（実際に走った頭数。取消・除外は除く）
+
+# ---- 10 点表示の基準（内部は 0〜1。値は 10 で割って持つ） ----
+def to_internal(points10):
+    return points10 / 10.0
+
+WIN_ABILITY = to_internal(8.0)        # 勝利条件（能力）  仮
+LOSE_ABILITY = to_internal(5.0)       # 敗北条件（能力）  仮
+OPPONENT_GAP = to_internal(1.0)       # 能力差 1.0 以内    設計文書（0.10）
+PACE_DAMAGE_COLLAPSE = to_internal(6.0)  # 展開被害 6.0 以上 設計文書（0.60）
+FIT_MIN = to_internal(5.0)            # 適性・WPR・騎手の下限 設計文書（0.50）
+CONTRADICTION_ABILITY = to_internal(8.0)  # 設計文書（0.80）
+# 通過位置（番手・18頭換算）
+FRONT_MAX_BAN = 5                     # 前寄り: 5番手以内
+BACK_MIN_BAN = 12                     # 後寄り: 12番手以降
