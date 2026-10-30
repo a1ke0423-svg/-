@@ -35,7 +35,7 @@ class Prob(unittest.TestCase):
         s9 = step9_scenarios(horses, [1])
         r = step10_probabilities(s9, horses)
         self.assertEqual(r["horses"][1]["reproducibility_wpr"], 0.3)
-        self.assertNotIn("reproducibility_wpr", {"win_prob"})
+        self.assertNotIn("reproducibility_wpr", {k: v for k, v in r["horses"][1].items() if k in ("win_prob", "top3_prob")})
 
 
 if __name__ == "__main__":
