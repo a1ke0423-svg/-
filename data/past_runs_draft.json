@@ -5,7 +5,7 @@
       "source_url": "https://db.netkeiba.com/horse/result/2022105102/",
       "retrieved_at": "2026-10-30T14:28:49.829027+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -68,7 +68,9 @@
           "corner_path": "不明",
           "last_3f": "不明"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T14:33:19.346553+09:00",
+      "confirm_note": "netkeiba成績画面と照合、5走とも一致"
     }
   ],
   "failed": []
