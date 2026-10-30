@@ -5,7 +5,7 @@
       "source_url": "https://db.netkeiba.com/horse/result/2022105102/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -68,14 +68,16 @@
           "corner_path": "不明",
           "last_3f": "不明"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2020100680",
       "source_url": "https://db.netkeiba.com/horse/result/2020100680/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -138,14 +140,16 @@
           "corner_path": "7-7",
           "last_3f": "34.2"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2021105898",
       "source_url": "https://db.netkeiba.com/horse/result/2021105898/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -208,14 +212,16 @@
           "corner_path": "8-8-6-6",
           "last_3f": "34.0"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2022104416",
       "source_url": "https://db.netkeiba.com/horse/result/2022104416/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -278,14 +284,16 @@
           "corner_path": "4-4",
           "last_3f": "33.1"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）。※IDは未検証のため要再確認"
     },
     {
       "horse_id": "2020103075",
       "source_url": "https://db.netkeiba.com/horse/result/2020103075/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -348,14 +356,16 @@
           "corner_path": "14-14",
           "last_3f": "32.8"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2019102632",
       "source_url": "https://db.netkeiba.com/horse/result/2019102632/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -418,14 +428,16 @@
           "corner_path": "1-1-1-1",
           "last_3f": "36.9"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2022105519",
       "source_url": "https://db.netkeiba.com/horse/result/2022105519/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -488,14 +500,16 @@
           "corner_path": "8-8-7-7",
           "last_3f": "33.7"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2019105118",
       "source_url": "https://db.netkeiba.com/horse/result/2019105118/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -558,14 +572,16 @@
           "corner_path": "12-12-14",
           "last_3f": "35.3"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2020103941",
       "source_url": "https://db.netkeiba.com/horse/result/2020103941/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -628,14 +644,16 @@
           "corner_path": "2-2-2-2",
           "last_3f": "37.7"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2022105140",
       "source_url": "https://db.netkeiba.com/horse/result/2022105140/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -698,14 +716,16 @@
           "corner_path": "10-10",
           "last_3f": "33.5"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2020103101",
       "source_url": "https://db.netkeiba.com/horse/result/2020103101/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -768,14 +788,16 @@
           "corner_path": "8-9-9-10",
           "last_3f": "33.2"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2021106787",
       "source_url": "https://db.netkeiba.com/horse/result/2021106787/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -838,14 +860,16 @@
           "corner_path": "6-6-4-3",
           "last_3f": "35.6"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）。※上がり41.6・通過1-1-1-1は値が特異なので要再確認"
     },
     {
       "horse_id": "2023103604",
       "source_url": "https://db.netkeiba.com/horse/result/2023103604/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -908,14 +932,16 @@
           "corner_path": "4-4",
           "last_3f": "35.4"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2021106548",
       "source_url": "https://db.netkeiba.com/horse/result/2021106548/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -978,14 +1004,16 @@
           "corner_path": "14-14-11-7",
           "last_3f": "34.1"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2022104094",
       "source_url": "https://db.netkeiba.com/horse/result/2022104094/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -1048,14 +1076,16 @@
           "corner_path": "1-1-1-1",
           "last_3f": "34.7"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2022103995",
       "source_url": "https://db.netkeiba.com/horse/result/2022103995/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -1118,14 +1148,16 @@
           "corner_path": "12-12-14-13",
           "last_3f": "34.5"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     },
     {
       "horse_id": "2021105143",
       "source_url": "https://db.netkeiba.com/horse/result/2021105143/",
       "retrieved_at": "2026-10-30T14:43:05.929028+09:00",
       "drafted_by": "AI(script)",
-      "confirmed_by": null,
+      "confirmed_by": "利用者（チャットで確認）",
       "table_found": true,
       "runs": [
         {
@@ -1188,7 +1220,9 @@
           "corner_path": "不明",
           "last_3f": "不明"
         }
-      ]
+      ],
+      "confirmed_at": "2026-10-30T15:19:30.131992+09:00",
+      "confirm_note": "netkeiba成績画面と照合（利用者確認）"
     }
   ],
   "failed": []
